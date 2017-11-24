@@ -173,6 +173,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CoachDB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\ListModelViews.cs" />
     <Compile Include="Models\location.cs">
       <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
