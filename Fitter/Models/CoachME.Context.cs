@@ -13,10 +13,10 @@ namespace Fitter.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CoachDBEntities : DbContext
+    public partial class CoachDBEntities1 : DbContext
     {
-        public CoachDBEntities()
-            : base("name=CoachDBEntities")
+        public CoachDBEntities1()
+            : base("name=CoachDBEntities1")
         {
         }
     

@@ -8,6 +8,7 @@ namespace Fitter.Controllers
 {
     public class PersonController : Controller
     {
+        
         // GET: Person
         public ActionResult Add()
         {

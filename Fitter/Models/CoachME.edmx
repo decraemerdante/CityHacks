@@ -19,7 +19,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="text" Nullable="false" />
           <Property Name="Age" Type="int" Nullable="false" />
         </EntityType>
@@ -27,7 +27,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="text" Nullable="false" />
           <Property Name="Location_id" Type="int" Nullable="false" />
         </EntityType>
@@ -35,17 +35,17 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Student_id" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Teacher">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Person_id" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Sport__Location___571DF1D5">
+        <Association Name="FK__Sport__Location___5DCAEF64">
           <End Role="locations" Type="Self.locations" Multiplicity="1" />
           <End Role="Sport" Type="Self.Sport" Multiplicity="*" />
           <ReferentialConstraint>
@@ -57,7 +57,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student__Student__5441852A">
+        <Association Name="FK__Student__Student__60A75C0F">
           <End Role="Person" Type="Self.Person" Multiplicity="1" />
           <End Role="Student" Type="Self.Student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -69,7 +69,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Teacher__Person___5165187F">
+        <Association Name="FK__Teacher__Person___6383C8BA">
           <End Role="Person" Type="Self.Person" Multiplicity="1" />
           <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
           <ReferentialConstraint>
@@ -87,15 +87,15 @@
           <EntitySet Name="Sport" EntityType="Self.Sport" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Sport__Location___571DF1D5" Association="Self.FK__Sport__Location___571DF1D5">
+          <AssociationSet Name="FK__Sport__Location___5DCAEF64" Association="Self.FK__Sport__Location___5DCAEF64">
             <End Role="locations" EntitySet="locations" />
             <End Role="Sport" EntitySet="Sport" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student__Student__5441852A" Association="Self.FK__Student__Student__5441852A">
+          <AssociationSet Name="FK__Student__Student__60A75C0F" Association="Self.FK__Student__Student__60A75C0F">
             <End Role="Person" EntitySet="Person" />
             <End Role="Student" EntitySet="Student" />
           </AssociationSet>
-          <AssociationSet Name="FK__Teacher__Person___5165187F" Association="Self.FK__Teacher__Person___5165187F">
+          <AssociationSet Name="FK__Teacher__Person___6383C8BA" Association="Self.FK__Teacher__Person___6383C8BA">
             <End Role="Person" EntitySet="Person" />
             <End Role="Teacher" EntitySet="Teacher" />
           </AssociationSet>
@@ -114,44 +114,44 @@
           <Property Name="locationtype" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="lat" Type="Decimal" Precision="17" Scale="14" />
           <Property Name="long" Type="Decimal" Precision="17" Scale="14" />
-          <NavigationProperty Name="Sport" Relationship="Self.FK__Sport__Location___571DF1D5" FromRole="locations" ToRole="Sport" />
+          <NavigationProperty Name="Sport" Relationship="Self.FK__Sport__Location___5DCAEF64" FromRole="locations" ToRole="Sport" />
         </EntityType>
         <EntityType Name="Person">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Age" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Student" Relationship="Self.FK__Student__Student__5441852A" FromRole="Person" ToRole="Student" />
-          <NavigationProperty Name="Teacher" Relationship="Self.FK__Teacher__Person___5165187F" FromRole="Person" ToRole="Teacher" />
+          <NavigationProperty Name="Student" Relationship="Self.FK__Student__Student__60A75C0F" FromRole="Person" ToRole="Student" />
+          <NavigationProperty Name="Teacher" Relationship="Self.FK__Teacher__Person___6383C8BA" FromRole="Person" ToRole="Teacher" />
         </EntityType>
         <EntityType Name="Sport">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Location_id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="locations" Relationship="Self.FK__Sport__Location___571DF1D5" FromRole="Sport" ToRole="locations" />
+          <NavigationProperty Name="locations" Relationship="Self.FK__Sport__Location___5DCAEF64" FromRole="Sport" ToRole="locations" />
         </EntityType>
         <EntityType Name="Student">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Student_id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Person" Relationship="Self.FK__Student__Student__5441852A" FromRole="Student" ToRole="Person" />
+          <NavigationProperty Name="Person" Relationship="Self.FK__Student__Student__60A75C0F" FromRole="Student" ToRole="Person" />
         </EntityType>
         <EntityType Name="Teacher">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Person_id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Person" Relationship="Self.FK__Teacher__Person___5165187F" FromRole="Teacher" ToRole="Person" />
+          <NavigationProperty Name="Person" Relationship="Self.FK__Teacher__Person___6383C8BA" FromRole="Teacher" ToRole="Person" />
         </EntityType>
-        <Association Name="FK__Sport__Location___571DF1D5">
+        <Association Name="FK__Sport__Location___5DCAEF64">
           <End Role="locations" Type="Self.locations" Multiplicity="1" />
           <End Role="Sport" Type="Self.Sport" Multiplicity="*" />
           <ReferentialConstraint>
@@ -163,7 +163,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student__Student__5441852A">
+        <Association Name="FK__Student__Student__60A75C0F">
           <End Role="Person" Type="Self.Person" Multiplicity="1" />
           <End Role="Student" Type="Self.Student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -175,7 +175,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Teacher__Person___5165187F">
+        <Association Name="FK__Teacher__Person___6383C8BA">
           <End Role="Person" Type="Self.Person" Multiplicity="1" />
           <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
           <ReferentialConstraint>
@@ -187,21 +187,21 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CoachDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CoachDBEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="locations" EntityType="Self.locations" />
           <EntitySet Name="Person" EntityType="Self.Person" />
           <EntitySet Name="Sport" EntityType="Self.Sport" />
           <EntitySet Name="Student" EntityType="Self.Student" />
           <EntitySet Name="Teacher" EntityType="Self.Teacher" />
-          <AssociationSet Name="FK__Sport__Location___571DF1D5" Association="Self.FK__Sport__Location___571DF1D5">
+          <AssociationSet Name="FK__Sport__Location___5DCAEF64" Association="Self.FK__Sport__Location___5DCAEF64">
             <End Role="locations" EntitySet="locations" />
             <End Role="Sport" EntitySet="Sport" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student__Student__5441852A" Association="Self.FK__Student__Student__5441852A">
+          <AssociationSet Name="FK__Student__Student__60A75C0F" Association="Self.FK__Student__Student__60A75C0F">
             <End Role="Person" EntitySet="Person" />
             <End Role="Student" EntitySet="Student" />
           </AssociationSet>
-          <AssociationSet Name="FK__Teacher__Person___5165187F" Association="Self.FK__Teacher__Person___5165187F">
+          <AssociationSet Name="FK__Teacher__Person___6383C8BA" Association="Self.FK__Teacher__Person___6383C8BA">
             <End Role="Person" EntitySet="Person" />
             <End Role="Teacher" EntitySet="Teacher" />
           </AssociationSet>
@@ -211,7 +211,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CoachDBModelStoreContainer" CdmEntityContainer="CoachDBEntities">
+        <EntityContainerMapping StorageEntityContainer="CoachDBModelStoreContainer" CdmEntityContainer="CoachDBEntities1">
           <EntitySetMapping Name="locations">
             <EntityTypeMapping TypeName="CoachDBModel.locations">
               <MappingFragment StoreEntitySet="locations">
