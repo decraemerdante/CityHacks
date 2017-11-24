@@ -49,9 +49,7 @@ textarea {
     background-color: #546e7a;
 }
 
-.container:first-child {
-    margin-top: 2em;
-}
+
 .navbar {
     background-color: #ee6e73;
 }
@@ -87,4 +85,6 @@ textarea {
     margin: 5px;
     width: 40px;
 }
-
+ .contentHome{
+     margin-top: 1.2em;
+ }
