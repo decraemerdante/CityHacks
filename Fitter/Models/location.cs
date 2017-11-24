@@ -12,12 +12,12 @@ namespace Fitter.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class locations
+    public partial class location
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public locations()
+        public location()
         {
-            this.Sport = new HashSet<Sport>();
+            this.Tables = new HashSet<Table>();
         }
     
         public int ID { get; set; }
@@ -25,8 +25,9 @@ namespace Fitter.Models
         public string locationtype { get; set; }
         public Nullable<decimal> lat { get; set; }
         public Nullable<decimal> @long { get; set; }
+        public string Sport { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Sport> Sport { get; set; }
+        public virtual ICollection<Table> Tables { get; set; }
     }
 }

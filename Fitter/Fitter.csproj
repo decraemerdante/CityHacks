@@ -173,14 +173,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CoachDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\locations.cs">
+    <Compile Include="Models\location.cs">
       <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelView.cs" />
+    <Compile Include="Models\LocationDB.cs" />
+    <Compile Include="Models\ModelViewSport.cs" />
     <Compile Include="Models\Person.cs">
       <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PersonDB.cs" />
     <Compile Include="Models\Sport.cs">
+      <DependentUpon>CoachDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Table.cs">
       <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -13,10 +13,10 @@ namespace Fitter.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CoachDBEntities : DbContext
+    public partial class CoachDBEntities1 : DbContext
     {
-        public CoachDBEntities()
-            : base("name=CoachDBEntities")
+        public CoachDBEntities1()
+            : base("name=CoachDBEntities1")
         {
         }
     
@@ -25,8 +25,9 @@ namespace Fitter.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<locations> locations { get; set; }
-        public virtual DbSet<Person> Person { get; set; }
-        public virtual DbSet<Sport> Sport { get; set; }
+        public virtual DbSet<location> locations { get; set; }
+        public virtual DbSet<Person> People { get; set; }
+        public virtual DbSet<Sport> Sports { get; set; }
+        public virtual DbSet<Table> Tables { get; set; }
     }
 }

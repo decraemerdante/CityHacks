@@ -5,8 +5,9 @@ using System.Web;
 
 namespace Fitter.Models
 {
-    public class ModelView
+    public class LocationDB
     {
+        public int ID;
 
     }
 }

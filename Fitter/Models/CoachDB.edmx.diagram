@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="26501512ee054c2ba33fa64cc9e68132" Name="Diagram1">
-        <EntityTypeShape EntityType="CoachDBModel.locations" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoachDBModel.Person" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoachDBModel.Sport" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <AssociationConnector Association="CoachDBModel.FK__Sport__Location___5DCAEF64" ManuallyRouted="false" />
-        <AssociationConnector Association="CoachDBModel.FK__Person__Sport_id__656C112C" ManuallyRouted="false" />
+      <Diagram DiagramId="6a51c6013090414897291f927eec37c9" Name="Diagram1">
+        <EntityTypeShape EntityType="CoachDBModel.location" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoachDBModel.Person" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoachDBModel.Sport" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoachDBModel.Table" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="CoachDBModel.FK__Table__Location___693CA210" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
