@@ -9,11 +9,11 @@ namespace Fitter.Controllers
 {
     public class locationsController : Controller
     {
-        CoachDBEntities1 db;
+        CoachDBEntities db;
 
         public locationsController()
         {
-            db = new CoachDBEntities1();
+            db = new CoachDBEntities();
         }
 
         // GET: locations

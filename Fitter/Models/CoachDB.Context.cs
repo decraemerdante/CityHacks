@@ -13,10 +13,10 @@ namespace Fitter.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CoachDBEntities1 : DbContext
+    public partial class CoachDBEntities : DbContext
     {
-        public CoachDBEntities1()
-            : base("name=CoachDBEntities1")
+        public CoachDBEntities()
+            : base("name=CoachDBEntities")
         {
         }
     
@@ -28,7 +28,5 @@ namespace Fitter.Models
         public virtual DbSet<locations> locations { get; set; }
         public virtual DbSet<Person> Person { get; set; }
         public virtual DbSet<Sport> Sport { get; set; }
-        public virtual DbSet<Student> Student { get; set; }
-        public virtual DbSet<Teacher> Teacher { get; set; }
     }
 }
