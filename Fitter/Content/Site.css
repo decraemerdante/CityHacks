@@ -22,27 +22,25 @@ select,
 textarea {
     max-width: 280px;
 }
-
 .myCustomStyle {
     background-color: #ee6e73;
     color: white;
     padding: 0.9em;
 }
 
-.myCustomStyle p span{
-    font-weight: bold;
-}
+    .myCustomStyle p span {
+        font-weight: bold;
+    }
 
 .myCustomCard {
-
 }
 
-.MyBotton{
+.MyBotton {
     font-weight: bold;
-    width:9em;
+    width: 9em;
 }
 
-.first{
+.first {
     margin-right: 2em;
 }
 
@@ -51,6 +49,42 @@ textarea {
     background-color: #546e7a;
 }
 
-.container:first-child{
-    margin-top:2em;
+.container:first-child {
+    margin-top: 2em;
 }
+.navbar {
+    background-color: #ee6e73;
+}
+
+.navbar-brand {
+    color: white !important
+}
+
+    .navbar-brand:visited {
+        color: white !important
+    }
+
+.navbar-default-color {
+    color: white !important
+}
+
+.navbar-inverse {
+    color: white !important
+}
+
+.nav.navbar-nav li a {
+    color: #fff;
+}
+
+.nav.navbar-nav a:hover {
+    color: grey;
+}
+
+.navbar-brand {
+    background: url(/Content/Images/JoinMeLogo.png) no-repeat;
+    background-size: 40px 40px;
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+}
+
