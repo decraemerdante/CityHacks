@@ -22,3 +22,35 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.myCustomStyle {
+    background-color: #ee6e73;
+    color: white;
+    padding: 0.9em;
+}
+
+.myCustomStyle p span{
+    font-weight: bold;
+}
+
+.myCustomCard {
+
+}
+
+.MyBotton{
+    font-weight: bold;
+    width:9em;
+}
+
+.first{
+    margin-right: 2em;
+}
+
+.span-number {
+    font-size: 1.5em;
+    background-color: #546e7a;
+}
+
+.container:first-child{
+    margin-top:2em;
+}
