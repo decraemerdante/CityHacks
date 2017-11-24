@@ -26,5 +26,12 @@ namespace Fitter.Controllers
 
             return View();
         }
+        [Route("Home/Info")]
+        public ActionResult Info()
+        {
+            ViewBag.Message = "Your contact info.";
+
+            return View();
+        }
     }
 }
