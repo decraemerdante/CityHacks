@@ -22,3 +22,32 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar
+{
+    background-color: #ee6e73;
+    
+}
+
+.navbar-brand {
+    color: white !important
+}
+
+    .navbar-brand:visited {
+        color: white !important
+    }
+
+.navbar-default-color {
+    color: white !important
+}
+
+.navbar-inverse {
+    color: white !important
+}
+.nav.navbar-nav li a {
+    color: #fff;
+}
+
+.nav.navbar-nav a:hover {
+    color: grey;
+}
