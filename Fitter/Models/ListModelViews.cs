@@ -8,7 +8,12 @@ namespace Fitter.Models
     public class ListModelViews
     {
         List<ModelViewSport> ModelSports;
+        private void Init()
+        {
 
+        }
     }
+    
+   
 
 }
