@@ -9,11 +9,13 @@ namespace Fitter.Controllers
 {
     public class HomeController : Controller
     {
+        ListModelViews mv = new ListModelViews();
         CoachDBEntities1 db = new CoachDBEntities1();
         public ActionResult Index()
         {
-           
-            return View();
+            ListModelViews mv = new ListModelViews();
+            
+            return View(mv);
         }
 
         public ActionResult About()
@@ -29,10 +31,20 @@ namespace Fitter.Controllers
 
             return View();
         }
-        [Route("Home/Info")]
-        public ActionResult Info()
+        
+        public ActionResult Info(int id)
         {
+            
             ViewBag.Message = "Your contact info.";
+
+            foreach(var item in mv.ModelSports)
+            {
+
+                if(item.SportId == id)
+                {
+                    return View(item);
+                }
+            }
 
             return View();
         }

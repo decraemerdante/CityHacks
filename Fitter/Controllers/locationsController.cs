@@ -9,18 +9,14 @@ namespace Fitter.Controllers
 {
     public class locationsController : Controller
     {
-        CoachDBEntities db;
+        //CoachDBEntities db;
 
         public locationsController()
         {
-            db = new CoachDBEntities();
+            //db = new CoachDBEntities();
         }
 
         // GET: locations
-        public ActionResult Index()
-        {
-            
-            return View(model: db.locations.ToList());
-        }
+      
     }
 }

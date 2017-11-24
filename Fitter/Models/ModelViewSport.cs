@@ -14,5 +14,6 @@ namespace Fitter.Models
         public int Distance;
         public List<Person> DeelNemers;
         public Person Teacher;
+        public string src;
     }
 }

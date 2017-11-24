@@ -21,5 +21,6 @@ namespace Fitter.Models
         public Nullable<bool> Teacher { get; set; }
         public string UserName { get; set; }
         public Nullable<int> Sport { get; set; }
+        public int Afstand { get; set; }
     }
 }

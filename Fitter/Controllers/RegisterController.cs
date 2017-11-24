@@ -9,7 +9,7 @@ namespace Fitter.Controllers
 {
     public class RegisterController : Controller
     {
-        CoachDBEntities db = new CoachDBEntities();
+        //CoachDBEntities db = new CoachDBEntities();
         // GET: Register
         public ActionResult Index()
         {

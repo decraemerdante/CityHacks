@@ -26,14 +26,14 @@ textarea {
     background-color: #ee6e73;
     color: white;
     padding: 0.9em;
+    margin-bottom:0.9em;
 }
 
 .myCustomStyle p span {
         font-weight: bold;
 }
 
-.myCustomCard {
-}
+
 
 .MyBotton {
     font-weight: bold;
@@ -87,6 +87,8 @@ textarea {
 }
  .contentHome{
      margin-top: 1.2em;
+     margin-bottom: 1em;
+     padding-bottom: 1em;
  }
 
 .myFooter {
@@ -110,4 +112,8 @@ textarea {
     display: inline;
     font-weight: bold;
     width: 9em;
+}
+
+.myCustomCard{
+    margin-bottom: 1.2em;
 }
