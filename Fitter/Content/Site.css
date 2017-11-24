@@ -28,9 +28,9 @@ textarea {
     padding: 0.9em;
 }
 
-    .myCustomStyle p span {
+.myCustomStyle p span {
         font-weight: bold;
-    }
+}
 
 .myCustomCard {
 }
@@ -97,4 +97,17 @@ textarea {
     background-color: #f5f5f5;
     position: relative;
     min-height: 100%;
+}
+
+#info {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.MyBotton2 {
+    display: inline;
+    font-weight: bold;
+    width: 9em;
 }
