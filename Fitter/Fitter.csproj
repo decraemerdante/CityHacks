@@ -152,39 +152,35 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\locationsController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CoachME.Context.cs">
+    <Compile Include="Models\CoachDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CoachME.Context.tt</DependentUpon>
+      <DependentUpon>CoachDB.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CoachME.cs">
+    <Compile Include="Models\CoachDB.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CoachME.tt</DependentUpon>
+      <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CoachME.Designer.cs">
+    <Compile Include="Models\CoachDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CoachME.edmx</DependentUpon>
+      <DependentUpon>CoachDB.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\locations.cs">
-      <DependentUpon>CoachME.tt</DependentUpon>
+      <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Person.cs">
-      <DependentUpon>CoachME.tt</DependentUpon>
+      <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Sport.cs">
-      <DependentUpon>CoachME.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Student.cs">
-      <DependentUpon>CoachME.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Teacher.cs">
-      <DependentUpon>CoachME.tt</DependentUpon>
+      <DependentUpon>CoachDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -203,27 +199,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\CoachME.Context.tt">
+    <Content Include="Models\CoachDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CoachME.edmx</DependentUpon>
-      <LastGenOutput>CoachME.Context.cs</LastGenOutput>
+      <DependentUpon>CoachDB.edmx</DependentUpon>
+      <LastGenOutput>CoachDB.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\CoachME.tt">
+    <Content Include="Models\CoachDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CoachME.edmx</DependentUpon>
-      <LastGenOutput>CoachME.cs</LastGenOutput>
+      <DependentUpon>CoachDB.edmx</DependentUpon>
+      <LastGenOutput>CoachDB.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\CoachME.edmx">
+    <EntityDeploy Include="Models\CoachDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CoachME.Designer.cs</LastGenOutput>
+      <LastGenOutput>CoachDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\CoachME.edmx.diagram">
-      <DependentUpon>CoachME.edmx</DependentUpon>
+    <Content Include="Models\CoachDB.edmx.diagram">
+      <DependentUpon>CoachDB.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\Fitter20171124112244 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -237,6 +233,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Register.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -252,9 +249,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Info.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
