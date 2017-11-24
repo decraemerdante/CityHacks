@@ -51,3 +51,11 @@ textarea {
 .nav.navbar-nav a:hover {
     color: grey;
 }
+
+.navbar-brand {
+    background: url(/Content/Images/JoinMeLogo.png) no-repeat;
+    background-size: 40px 40px;
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+}
